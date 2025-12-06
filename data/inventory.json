@@ -1,0 +1,17 @@
+{
+  "iphone 15": {
+    "price": 25000000,
+    "stock": 5,
+    "color": "Titan tự nhiên"
+  },
+  "samsung s24": {
+    "price": 20000000,
+    "stock": 0,
+    "color": "Đen"
+  },
+  "macbook air m2": {
+    "price": 24000000,
+    "stock": 12,
+    "color": "Xanh midnight"
+  }
+}
