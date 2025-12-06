@@ -33,11 +33,8 @@ st.write(
 )
 
 # --- API KEY ---
-api_key = st.sidebar.text_input("Nhập Google Gemini API Key:", type="password")
-if not api_key:
-    st.info("Vui lòng nhập Google API Key để bắt đầu.")
-    st.stop()
-
+# Lấy API key từ Streamlit Secrets (bảo mật)
+api_key = st.secrets["GOOGLE_API_KEY"]
 os.environ["GOOGLE_API_KEY"] = api_key
 
 # DÙNG GEMINI CHAT (API KEY từ Google AI Studio)
@@ -445,6 +442,7 @@ if user_input:
                     "admin_only": admin_only_flag,  # <<== SỬA Ở ĐÂY
                 }
             )
+
 
 
 
