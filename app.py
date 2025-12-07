@@ -39,7 +39,7 @@ os.environ["GOOGLE_API_KEY"] = api_key
 
 # DÙNG GEMINI CHAT (API KEY từ Google AI Studio)
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.0-flash",
+    model="gemini-flash-latest",
     temperature=0,
     google_api_key=api_key,
     max_retries=1,
@@ -442,6 +442,7 @@ if user_input:
                     "admin_only": admin_only_flag,  # <<== SỬA Ở ĐÂY
                 }
             )
+
 
 
 
